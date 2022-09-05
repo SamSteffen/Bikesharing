@@ -22,7 +22,7 @@ An initial analysis of the August 2019 sample data revealed the following:
 
 We also generated visualizations to show which starting and ending stations were utilized, and with what frequency.
 
-Visualizations of our initial analysis are available here: [HYPERLINK TO FIRST TABLEAU PROJECT]
+Visualizations of our initial analysis are available here: https://public.tableau.com/app/profile/sam.steffen/viz/Bikeshare_Analysis/NYCStory
 
 To create visualizations of more granular details such as what hour or weekday saw the greatest use of Citi Bikes, changing the datatype of the "trip duration" data was necessary. The results of th
 
@@ -43,43 +43,44 @@ To see these visualizations, scroll down or visit the Citi Bike Analysis story o
 
 1. Bike Utilization (Bubble Chart)
 
-![](../images/Bike_Utilization.png)
+<img width="320" alt="Bike_Utilization" src="https://user-images.githubusercontent.com/104729703/188501010-daa9e665-da78-41df-85bf-22f5d722dd1f.png">
 
 The bubble chart above represents all of the bicycles by ID number in the dataset, and the sum of the length of time they are utilized in seconds. It would probably benefit our analysis to clean the data for the removal of outliars, as some of the larger bubbles here show that customers rent bikes for durations lasting longer than a complete month, which, considering that customers are charged for the time they use the bike, suggests this is probably an error on the user's end or a malfunction of the software used to check a bike in and out.
 
 2. Average Trip Duration (Area Map)
 
-![](../images/Avg_Trip_Duration.png)
+<img width="643" alt="Avg_Trip_Duration" src="https://user-images.githubusercontent.com/104729703/188501025-8373f295-83d7-436f-9d85-eb5516f670ef.png">
 
 The above area map shows the average length of each bike ride by rider age, according to birth year. It's unlikely that riders born prior to 1930 would be utilizing Citi Bikes in 2019 in the quantities indicated, suggesting that the data here is tainted; the error here is likely the cause of user input  or deliberate efforts on the part of the user to obscure personal information. If we isolate the data for users born after 1930, we can see a definitive correlation between age and trip distance. The younger the person, the longer the average length of trip on a Citi Bike, with the exception (outliar) being individuals born in 1969.
 
 3. Bike Checkout Times (Line Graph)
 
-![](../images/Checkout_times_for_users.png)
+<img width="550" alt="Checkout_times_for_users" src="https://user-images.githubusercontent.com/104729703/188501034-a2d1ebd5-20e2-4df7-ac33-70779372bd30.png">
 
 The above line graph shows the length of time a Citi Bike was checked out for each user. This map is filterable by hour and shows that the vast majority of riders are using Citi Bike for rides that take less than an hour to complete.
 
 4. Checkout Times by Gender (Line Graph)
 
-![](../images/Checkout_times_by_gender.png)
+<img width="674" alt="Checkout_times_by_gender" src="https://user-images.githubusercontent.com/104729703/188501047-ac45ac51-b129-4688-9ff5-cb871c8682d6.png">
 
 The above line graph shows the same information, but creates a distinct line for users who identify as male, female, and those who did not specify their gender. Males utilize the Citi Bike more than females and those who did not specify their gender.
 
 5. Trips by Weekday Per Hour (Heat Map)
 
-![](../images/Trips_by_wkdy_per_hour.png)
+<img width="676" alt="Trips_by_wkdy_per_hour" src="https://user-images.githubusercontent.com/104729703/188501061-102424da-e817-4c8c-bf8c-7bb343f29256.png">
+
 
 The above is a heatmap illustrating the quantity of bikes checked out at certain times of day for all users for each day of the week. The darker the color, the greater quantity of bikes checked out. The map clearly illustrates that customers utilize Citi Bike with greatest frequency on weekday mornings between 6 and 10 a.m., and on weekday afternoons between 4 and 7 p.m. This suggests that most users of Citi Bike use it as a means of commuting to or from work.
 
 6. Trips by Weekday by Gender (Heat Map)
 
-![](../images/Trips_by_gender.png)
+<img width="673" alt="Trips_by_gender" src="https://user-images.githubusercontent.com/104729703/188501107-258dee37-6aea-4fbf-8a50-df7f99a2bd1b.png">
 
 The above is a heatmap illustrating the quantity of bikes checked out at certain times of day for males, females and those who did not specify their gender. The darker the color, the greater quantity of bikes checked out. The map clearly illustrates that males and females both utilize Citi Bike with greatest frequency on weekday mornings between 6 and 10 a.m., and on weekday afternoons between 4 and 7 p.m. This suggests that most users of Citi Bike use it as a means of commuting to or from work.
 
 7. Trips by Weekday by Gender and User Type (Heat Map)
 
-![](../images/User_trips_by_gender_wkdy.png)
+<img width="678" alt="User_trips_by_gender_wkdy" src="https://user-images.githubusercontent.com/104729703/188501124-9fce2d9d-1f74-48a1-b698-5b36d49b409b.png">
 
 The above is a heatmap illustrating the quantity of bikes checked out for each user type (customer/subscriber) and gender (male/female/unknown) for each weekday. The darker the color, the greater the quantity of bikes checked out. The map clearly illustrates that male subscribers are the greatest user population of the Citi Bike program, and that they seem to use Citi Bikes with greater frequency at the end of the week (Thursday and Friday) as opposed to the beginning of the week (Monday and Tuesday). There is also a noticable drop in use on Wednesdays.
 
