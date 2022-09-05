@@ -24,7 +24,7 @@ We also generated visualizations to show which starting and ending stations were
 
 Visualizations of our initial analysis are available here: https://public.tableau.com/app/profile/sam.steffen/viz/Bikeshare_Analysis/NYCStory
 
-To create visualizations of more granular details such as what hour or weekday saw the greatest use of Citi Bikes, changing the datatype of the "trip duration" data was necessary. The results of th
+To create visualizations of more granular details such as what hour or weekday saw the greatest use of Citi Bikes, changing the datatype of the "trip duration" data was necessary. The results of this investigation are shown below.
 
 ## Results
 To convert the "trip duration" data to a datetime datatype, we used Python's pandas dependency. We added an additional column of data to the df so that we could continue to generate length-of-time visualizations, in addition to data pertaining to days of the week and hours/minutes of the day.
